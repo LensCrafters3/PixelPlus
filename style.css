@@ -257,6 +257,10 @@ footer{
     cursor: pointer;
 }
 
+.blog-card-footer .btn:hover{
+    text-decoration: underline;
+}
+
 s {
     color: red;
 }
