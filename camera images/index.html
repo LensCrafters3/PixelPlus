@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - PixelPlus</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="camera images/favicon.ico">
+</head>
+<body>
+<div class="pagecontainer">
+    <header>
+        <a href="index.html"><img class="pixel-logo" src="camera images/LOGO.png" alt="pixelplus logo"></a>
+        <nav>
+            <ul class="navlinks">
+                <li class="links"><a href="Services.html">Services</a></li>
+                <li><input id="search" type="text" placeholder="Search"></li>
+                <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button>Cameras & Equipment</button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu-information">
+                            <div class="dropdown-cam"><a href="Cameras.html"class="camera">Cameras</a></div>
+                            <div class="dropdown-equip"><a href="Equipment.html"class="equipment">Equipment</a></div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="signin-btn">
+            <input class="signin-btn" data-target-button="#window" id="sign in" type="button" value="Sign in">
+        </div>
+        <div class="cart">
+            <a href="Cart.html"><img class="cart" src="camera images/shopping-cart-logo-icon-shopping-cart-1c4ece4192d9f2bff2f57c678a709e5f.png" alt="cart logo"></a>
+        </div>
+    </header>
+
+        <div class="window" id="window">
+            <div class="window-header">
+            <div class="window-title">Sign In</div>
+            <button data-close-button="" class="close-button">&times;</button>
+            </div>
+        <div class="window-body">
+            <div class="body-header">
+                <div class="signin">Sign in</div> 
+                <div class="createaccount">Create account</div> 
+            </div>
+            <div class="input">
+                <input class="email" type="text" placeholder="Username or email"><br><br>
+                <input class="password" type="text" placeholder="Password">
+            </div>
+        </div>        
+        <div class="forgot">
+            <!--<img class="forgoticon" src="camera images/kisspng-computer-icons-security-hacker-computer-security-u-lock-icon-5b56c6a3265067.818780811532413603157.png" alt="padlock" width="13px">-->
+            <a href="Recover.html"><div class="fyp">Forgot your password?</div></a>
+        </div>
+        <hr>
+        <div class="window-sign-in-button">
+            <label for="pop sign in"></label>
+            <input class="design" id="pop sign in" type="button" value="Sign In">            
+        </div>
+    </div>
+    <div  id="overlay"></div>    
+    </div>
+
+    <h1 class="first">Featured Items</h1>
+
+    <!--<div class="banner">
+        <img src="camera images/camera banner.jpeg" alt="Camera banner" width="600px">
+    </div>-->
+
+    <hr>
+    <h1 class="second">Cameras</h1>
+    <div class="card-container">
+        <div class="blog-card">
+        <div class="blog-card-header blog-card-image">
+            <img src="camera images/Refurbished EOS R3 Body.jpeg" alt="Refurbished EOS R3 Body">
+        </div>
+        <div class="blog-card-body">
+            <div class="name">
+                Refurbished EOS R3 Body
+            </div>
+            <div class="price">
+                <b>$3,499.00</b>  <s>$4,499.00</s>
+            </div>
+        </div>
+        <div class="blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('109','camera images/Refurbished EOS R3 Body.jpeg','Refurbished EOS R3 Body','$3,499.00')" value="Add to cart">
+        </div>
+        </div>
+        <div class="blog-card">
+        <div class="blog-card-header blog-card-image">
+            <img src="camera images/dl7500.jpeg" alt="D7500">
+        </div>
+        <div class="blog-card-body">
+            <div class="name">
+                D7500
+            </div>
+            <div class="price">
+                <b>$899.95</b> <s>$1,399.00</s>
+            </div>
+        </div>
+        <div class="blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('109','camera images/dl7500.jpeg','D7500','$899.95')" value="Add to cart">
+        </div>
+        </div>
+        <div class="blog-card">
+        <div class="blog-card-header blog-card-image">
+            <img src="camera images/Alpha 7 IV - Full-frame Interchangeable Lens Camera 33MP, 10FPS, 4K-60p.jpeg" alt="Alpha 7 IV">
+        </div>
+        <div class="blog-card-body">
+            <div class="name">
+                Alpha 7 IV - Full-frame Interchangeable Lens Camera 33MP, 10FPS, 4K-60p
+            </div>
+            <div class="price">
+                <b>$2,499.99</b> <s>$2,799.00</s>
+            </div>
+        </div>
+        <div class="blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('109','camera images/Alpha 7 IV - Full-frame Interchangeable Lens Camera 33MP, 10FPS, 4K-60p.jpeg','Alpha 7 IV - Full-frame Interchangeable Lens Camera 33MP, 10FPS, 4K-60p','$2,499.99')" value="Add to cart">
+        </div>
+        </div>
+    </div>    
+
+    <h1>Equipment</h1>
+    <div class="card-container">
+        <div class="blog-card">
+        <div class="blog-card-header blog-card-image">
+            <img src="camera images/AF-S NIKKOR 24mm f-1.4G ED 1999.95.jpeg" alt="AF-S NIKKOR">
+        </div>
+        <div class="blog-card-body">
+            <div class="name">
+                AF-S NIKKOR 24mm f-1.4G ED
+            </div>
+            <div class="price">
+                <b>$1,999.95</b>
+            </div>
+        </div>
+        <div class="blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('109','camera images/AF-S NIKKOR 24mm f-1.4G ED 1999.95.jpeg','AF-S NIKKOR 24mm f-1.4G ED','>$1,999.95')" value="Add to cart">
+        </div>
+    </div>
+    <div class="blog-card">
+        <div class="blog-card-header blog-card-image">
+            <img src="camera images/EF 8-15mm f-4L Fisheye USM 1,249.00.jpeg" alt="EF 8-15mm f-4L Fisheye USM">
+        </div>
+        <div class="blog-card-body">
+            <div class="name">
+                EF 8-15mm f-4L Fisheye USM
+            </div>
+            <div class="price">
+                <b>$1,249.00</b>
+            </div>
+        </div>
+        <div class="blog-card-footer">
+            <input class="btn" id="btn" type="button" value="Add to cart">
+        </div>
+    </div>
+    <div class="blog-card">
+        <div class="blog-card-header blog-card-image">
+            <img src="camera images/DT 18–55 mm F3.5–5.6 SAM II 219.99 (1).webp" alt="DT 18–55 mm">
+        </div>
+        <div class="blog-card-body">
+            <div class="name">
+                DT 18–55 mm F3.5–5.6 SAM II
+            </div>
+            <div class="price">
+                <b>$219.99</b>
+            </div>
+        </div>
+        <div class="blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('109','camera images/DT 18–55 mm F3.5–5.6 SAM II 219.99 (1).webp','DT 18–55 mm F3.5–5.6 SAM II','$219.99')" value="Add to cart">
+        </div>
+    </div>
+    </div>
+
+    <h1>Recommended Services</h1>
+
+    <section aria-label="Services">
+        <div id="carousel" class="carousel">
+            <!--adjust the respective classes in style.css from .btn > .carousel-button-->
+            <!--adjust the script in script.js from btn > carousel-button-->
+            <button onclick=" slideBack()" class="carousel-button prev">&#129172;</button>
+            <button onclick=" slideNext()" class="carousel-button next">&#129174;</button>
+            <!--replace the slider class in style.css with the slider class in sstyle.css-->
+            <ul id="slider" class="slider">
+                <!--replace the slide class in style.css to the slide class in sstyle.css-->
+                <li id="slide" class="slide">
+                    <!--add the card class in sstyle.css to style.css-->
+                    <!--make adjustments in javascript if needed-->
+                    <div id="card" class="card">
+                        <div class="card-header card-image">
+                            <img src="services images/pixel plus.jpeg" alt="PixelPlus">
+                        </div>
+                        <div class="card-body">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                            Sit labore alias deleniti quo sunt atque temporibus architecto rerum! 
+                            Explicabo, incidunt.
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn">Details</button>
+                            <button class="btn outline-btn">Contact service</button>
+                        </div>
+                    </div>
+                </li>
+                <li id="slide" class="slide">
+                    <div id="card" class="card">
+                        <div class="card-header card-image">
+                            <img src="services images/pixel plus.jpeg" alt="PixelPlus">
+                        </div>
+                        <div class="card-body">
+                            PixelPlus is please to present its newly formed team of skilled professionals specializing in photography, videography, and other areas. We transform your ideas into lasting memories with unmatched expertise, attention to detail, and flawless execution.
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn">Details</button>
+                            <button class="btn outline-btn">Contact service</button>
+                        </div>
+                    </div>
+                </li>
+                <li id="slide" class="slide">
+                    <div id="card" class="card">
+                        <div class="card-header card-image">
+                            <img src="services images/pixel plus.jpeg" alt="PixelPlus">
+                        </div>
+                        <div class="card-body">
+                            PixelPlus is please to present its newly formed team of skilled professionals specializing in photography, videography, and other areas. We transform your ideas into lasting memories with unmatched expertise, attention to detail, and flawless execution.
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn">Details</button>
+                            <button class="btn outline-btn">Contact service</button>
+                        </div>
+                    </div>
+                </li>
+                <li id="slide" class="slide">
+                    <div id="card" class="card">
+                        <div class="card-header card-image">
+                            <img src="services images/pixel plus.jpeg" alt="PixelPlus">
+                        </div>
+                        <div class="card-body">
+                            PixelPlus is please to present its newly formed team of skilled professionals specializing in photography, videography, and other areas. We transform your ideas into lasting memories with unmatched expertise, attention to detail, and flawless execution.
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn">Details</button>
+                            <button class="btn outline-btn">Contact service</button>
+                        </div>
+                    </div>
+                </li>
+                <li id="slide" class="slide">
+                    <div id="card" class="card">
+                        <div class="card-header card-image">
+                            <img src="services images/pixel plus.jpeg" alt="PixelPlus">
+                        </div>
+                        <div class="card-body">
+                            PixelPlus is please to present its newly formed team of skilled professionals specializing in photography, videography, and other areas. We transform your ideas into lasting memories with unmatched expertise, attention to detail, and flawless execution.
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn">Details</button>
+                            <button class="btn outline-btn">Contact service</button>
+                        </div>
+                    </div>
+                </li>               
+            </ul>
+        </div>      
+    </section><br>
+    
+    <footer>
+        <div class="footercontainer">
+            <div class="footernav">
+                <div class="about">
+                    <h3>About</h3>
+                    <a href=""><p>Contact Us</p></a>
+                    <a href="About.html"><p>About Us</p></a>
+                </div>    
+                <div class="other">
+                    <h3>Discover</h3>
+                    <a href="" target="_blank"><p>Pixel Photo</p></a>
+                </div>
+                <div class="business">
+                    <h3>Business</h3>
+                    <a href=""><p>Advertise with Us</p></a>
+                </div>        
+                <div class="more">
+                    <h3>More</h3>
+                    <a href=""><p>My Account</p></a>
+                </div>
+            </div>
+        </div>
+        <div class="footerbottom">
+            <p>Designed by <span class="designer">Lens Crafters</span></p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
