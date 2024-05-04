@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cameras</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="camera images/favicon.ico">
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img class="pixel-logo" src="camera images/LOGO.png" alt="pixelplus logo"></a>
+        <nav>
+            <ul class="navlinks">
+                <li class="links"><a href="Services.html">Services</a></li>
+                <li><input id="search" type="text" placeholder="Search"></li>
+                <div class="dropdown" data-dropdown>
+                    <button class="link" data-dropdown-button>Cameras & Equipment</button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-menu-information">
+                            <div class="dropdown-cam"><a href="Cameras.html"class="camera">Cameras</a></div>
+                            <div class="dropdown-equip"><a href="Equipment.html"class="equipment">Equipment</a></div>
+                        </div>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+        <div class="signin-btn">
+            <input class="signin-btn" data-target-button="#window" id="sign in" type="button" value="Sign in">
+        </div>
+        <div class="cart">
+            <a href="Cart.html"><img class="cart" src="camera images/shopping-cart-logo-icon-shopping-cart-1c4ece4192d9f2bff2f57c678a709e5f.png" alt="cart logo"></a>
+        </div>
+    </header>
+
+    <div class="first-camera-card-container">
+        <div class="camera-blog-card">
+            <div class="camera-blog-card-header camera-blog-card-image">
+                <img src="camera images/Refurbished EOS R3 Body.jpeg" alt="Refurbished EOS R3 Body">
+            </div>
+            <div class="camera-blog-card-body">
+                <div class="name">
+                    Refurbished EOS R3 Body
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>High Image Quality with a Back-illuminated Stacked 24.1 Megapixel Full-frame CMOS Sensor.</li>
+                        <li>DIGIC X Image Processor with an ISO range of 100-102400; Expandable to 204800.</li>
+                        <li>High-speed continuous shooting of up to approx. 30 fps with electronic (silent) shutter and up to 12fps with Mechanical Shutter</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <b>$3,499.00</b>  <b><s>$4,499.00</s></b>
+                </div>
+            </div> 
+            <div class="camera-blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('101','camera images/Refurbished EOS R3 Body.jpeg','Refurbished EOS R3 Body','$3,499.00')" value="Add to cart">
+            </div>
+        </div>
+
+        <div class="camera-blog-card">
+            <div class="camera-blog-card-header camera-blog-card-image">
+                <img src="camera images/Alpha 6700 – APS-C Interchangeable Lens Hybrid Camera with SELP18135 Kit.jpeg" alt="Alpha 6700 - APS-C Interchangeable Lens Hybrid Camera">
+            </div>
+            <div class="camera-blog-card-body">
+                <div class="name">
+                    Alpha 6700 - APS-C Interchangeable Lens Hybrid Camera
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>26.0MP1 APS-C format Exmor R™ back-illuminated CMOS sensor</li>
+                        <li>BIONZ XR™ processing power for exceptional image quality</li>
+                        <li>Dedicated AI Processor and Real-time Recognition for accurate subject tracking</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <b>$1,399.99</b> / $59 mo
+                </div>
+            </div> 
+            <div class="camera-blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('102','camera images/Alpha 6700 – APS-C Interchangeable Lens Hybrid Camera with SELP18135 Kit.jpeg','Alpha 6700 - APS-C Interchangeable Lens Hybrid Camera','$1,399.99')" value="Add to cart">
+            </div>
+        </div>
+        <div class="camera-blog-card">
+            <div class="camera-blog-card-header camera-blog-card-image">
+                <img src="camera images/Alpha 7 IV - Full-frame Interchangeable Lens Camera 33MP, 10FPS, 4K-60p.jpeg" alt="Alpha 7 IV - Full-frame Interchangeable Lens Camera & Lens Kit 33MP, 10FPS, 4K/60p">
+            </div>
+            <div class="camera-blog-card-body">
+                <div class="name">
+                    Alpha 7 IV - Full-frame Interchangeable Lens Camera & Lens Kit 33MP, 10FPS, 4K/60p
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>33MP1 full-frame Exmor R™ back-illuminated CMOS sensor</li>
+                        <li>8x more powerful2, next generation BIONZ XR™ image processing engine</li>
+                        <li>Up to 4K 60p11 10-bit 4:2:2 w/ full pixel readout in all rec. formats</li>
+                    </ul>
+                </div>
+                <div class="price">
+                  <b>$2,699.99</b> 
+                </div>
+            </div> 
+            <div class="camera-blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('103','camera images/Alpha 7 IV - Full-frame Interchangeable Lens Camera 33MP, 10FPS, 4K-60p.jpeg','Alpha 7 IV - Full-frame Interchangeable Lens Camera & Lens Kit 33MP, 10FPS, 4K/60p','$2,699.99')" value="Add to cart">
+            </div>
+        </div>
+    </div>
+    <div class="first-camera-card-container">
+        <div class="camera-blog-card">
+            <div class="camera-blog-card-header camera-blog-card-image">
+                <img src="camera images/Alpha 9 III - Full-frame Mirrorless Interchangeable Lens Camera.webp" alt="Alpha 9 III - Full-frame Mirrorless Interchangeable Lens Camera">
+            </div>
+            <div class="camera-blog-card-body">
+                <div class="name">
+                    Alpha 9 III - Full-frame Mirrorless Interchangeable Lens Camera
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Unprecedented imagery from the world’s first1 camera with global shutter full-frame image sensor</li>
+                        <li>Blackout-free, 120 fps continuous shooting with full AF/AE tracking</li>
+                        <li>Preserve split-second moments with maximum shutter speed of 1/80,000 second4</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <b>$5,999.99</b> / $208 mo 
+                </div>
+            </div> 
+            <div class="camera-blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('104','camera images/Alpha 9 III - Full-frame Mirrorless Interchangeable Lens Camera.webp','Alpha 9 III - Full-frame Mirrorless Interchangeable Lens Camera','$5,999.99 / $208 mo')" value="Add to cart">
+            </div>
+        </div>
+
+        <div class="camera-blog-card">
+            <div class="camera-blog-card-header camera-blog-card-image">
+                <img src="camera images/D780.jpeg" alt="Nikon D780 | 24.5 MP Full Frame DSLR Camera">
+            </div>
+            <div class="camera-blog-card-body">
+                <div class="name">
+                    Nikon D780 | 24.5 MP Full Frame DSLR Camera
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>High resolution 24.5 MP backside illuminated FX sensor</li>
+                        <li>Source detail retention with 10-Bit N-Log or new HDR (HLG).</li>
+                        <li>Disruption-free silent shooting at 12 FPS.</li>
+                    </ul>
+                </div>
+                <div class="price">
+                   <b>$1,599.95</b>  <b><s>$2,299.95</s></b>
+                </div>
+            </div> 
+            <div class="camera-blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('105','camera images/D780.jpeg','Nikon D780 | 24.5 MP Full Frame DSLR Camera','$1,599.95')" value="Add to cart">
+            </div>
+        </div>
+        <div class="camera-blog-card">
+            <div class="camera-blog-card-header camera-blog-card-image">
+                <img src="camera images/FUJIFILM GFX100S 4,221.00.png" alt="Canon 310XL">
+            </div>
+            <div class="camera-blog-card-body">
+                <div class="name">
+                    FUJIFILM GFX100S
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Unparalleled control over the images created by the 102MP ultra-high resolution imaging sensor</li>
+                        <li>Back-illuminated design that optimising light capture for every image at each one of its 102 million pixels</li>
+                        <li>Quad-core X-Processor 4 imaging engine</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <b>$4,221.00</b>  
+                </div>
+            </div> 
+            <div class="camera-blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('106','camera images/FUJIFILM GFX100S 4,221.00.png','FUJIFILM GFX100S','$4,221.00')" value="Add to cart">
+            </div>
+        </div>
+    </div>
+    <div class="first-camera-card-container">
+        <div class="camera-blog-card">
+            <div class="camera-blog-card-header camera-blog-card-image">
+                <img src="camera images/dl7500.jpeg" alt="Nikon D7500">
+            </div>
+            <div class="camera-blog-card-body">
+                <div class="name">
+                    Nikon D7500
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>Expeed 5 Image Processing</li>
+                        <li>20.9 Megapixel CMOS Sensor</li>
+                        <li>ISO Range up to 51,200</li>
+                        <li>8 fps Continuous Shooting with Extended Buffer Capacity</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <b>$899.95</b>  
+                </div>
+            </div> 
+            <div class="camera-blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('107','camera images/dl7500.jpeg','Nikon D7500','$899.95')" value="Add to cart">
+            </div>
+        </div>
+        <div class="camera-blog-card">
+            <div class="camera-blog-card-header camera-blog-card-image">
+                <img src="camera images/file.png" alt="Canon 512XL">
+            </div>
+            <div class="camera-blog-card-body">
+                <div class="name">
+                    Canon 512XL
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>9.5 – 47.5mm f/1.2 (17 elements in 12 groups, including 11 new type glass elements). Spectra-coating. Built-in rubber hood.</li>
+                        <li>Close distance shooting by turning the zoom ring to “Macro” at the wide-angle end. Field of view: 38.6 x 53.1 mm</li>
+                        <li>Power zooming (Approx. 6-10 sec.) and manual zooming with zooming ring. Rotation angle: Approx. 120 degrees.</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <b>$528.46</b>  
+                </div>
+            </div> 
+            <div class="camera-blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('108','camera images/file.png','Canon 512XL','$528.46')" value="Add to cart">
+            </div>
+        </div>
+
+        <div class="camera-blog-card">
+            <div class="camera-blog-card-header camera-blog-card-image">
+                <img src="camera images/D3000 Kit with 18-55mm and 55-200mm DX VR Lenses.jpeg" alt="Nikon D3000">
+            </div>
+            <div class="camera-blog-card-body">
+                <div class="name">
+                    Nikon D300
+                </div>
+                <div class="details">
+                    <ul>
+                        <li>10.2-megapixel DX-format imaging sensor for prints up to 20 x 30 inches</li>
+                        <li>Includes 3x 18-55mm Zoom-Nikkor VR Image Stabilization lens</li>
+                        <li>Nikon EXPEED image processing; in-camera image editing and Active D-Lighting</li>
+                        <li>3.0-inch color LCD screen; 170-degree wide-angle viewing</li>
+                    </ul>
+                </div>
+                <div class="price">
+                    <b>$1,800.00</b>  
+                </div>
+            </div> 
+            <div class="camera-blog-card-footer">
+            <input class="btn" id="btn" type="button" onclick="addToCart('109','camera images/D3000 Kit with 18-55mm and 55-200mm DX VR Lenses.jpeg','Nikon D300','$1,800.00')" value="Add to cart">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
