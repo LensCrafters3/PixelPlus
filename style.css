@@ -1000,3 +1000,7 @@ button{
     cursor: pointer;
     font-family: "Open Sans", sans-serif
 }
+
+.equipment-blog-card-footer .btn:hover{
+    text-decoration: underline;
+}
