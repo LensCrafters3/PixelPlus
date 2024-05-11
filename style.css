@@ -268,7 +268,7 @@ s {
 .first{
     text-align: center;
     padding-top: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 5px;
 }
 
 .second{
@@ -1012,4 +1012,18 @@ button{
 
 .equipment-blog-card-footer .btn:hover{
     text-decoration: underline;
+}
+
+.banner{
+    height: 150px;
+    overflow: hidden;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+.banner > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
