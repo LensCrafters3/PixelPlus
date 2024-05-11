@@ -874,6 +874,15 @@ button{
     color: #505050;
 }
 
+#cart-items{
+    margin-left: 50px;
+    margin-right: 50px;
+    min-height: 300px;
+    max-height: auto;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
 .first-services{
     text-align: center;
 }
