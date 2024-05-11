@@ -147,7 +147,7 @@ function addToCart(id, image, name, price) {
     /* assign to localstorage */
     localStorage.setItem("shopping-cart", JSON.stringify(tmp));
     /* set alert that item was added to cart */
-    //alert("Added to Cart");
+    alert("Added to Cart");
 }
 
 
